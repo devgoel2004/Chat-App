@@ -1,0 +1,11 @@
+.logoImage {
+  width: 150px;
+  height: 70px;
+  margin-top: 20px;
+}
+
+@media only screen and(min-width:1000px) {
+  .logoImage {
+    display: none;
+  }
+}
