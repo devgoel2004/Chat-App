@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(
-      "mongodb+srv://devgoel12072004:9690011021dev@cluster0.ehl1v1y.mongodb.net/?retryWrites=true&w=majority"
-    );
+    const conn = await mongoose.connect(process.env.MONGO);
     console.log(
       `MongoDB connected,${conn.connection.host}`.blue.bold.underline
     );
